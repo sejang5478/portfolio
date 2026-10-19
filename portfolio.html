@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>장소은_포트폴리오</title>
+  <meta name="description" content="카드 결제인프라 매니저 장소은 포트폴리오: 프로젝트별 문제·실행·결과" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23fee500'/><text x='32' y='44' font-size='32' font-family='sans-serif' font-weight='800' fill='%23191919' text-anchor='middle'>S</text></svg>" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="bar">
+    <a class="bar__brand" href="index.html"><i></i>장소은</a>
+    <nav aria-label="문서">
+      <a href="index.html">홈</a>
+      <a href="career.html">경력기술서</a>
+      <a href="portfolio.html" aria-current="page">포트폴리오</a>
+    </nav>
+    <a class="bar__pdf" href="pdf/장소은_포트폴리오.pdf" download>PDF</a>
+  </header>
+
+  <main class="doc">
+    <!-- P1 : 개요 -->
+    <section class="page reveal">
+      <div class="dh">
+        <div>
+          <span class="dh__kicker">카카오페이 · 사업 기획 및 제휴 (페이카드 / 내 카드 머니 연결) 지원</span>
+          <h1>포트폴리오<span>장소은</span></h1>
+        </div>
+        <div class="dh__meta">
+          <b>네이버파이낸셜</b> 결제인프라 · 매니저<br />
+          2024.11 – 재직 중<br />
+          thdms5478@naver.com
+        </div>
+      </div>
+      <p class="lead">카드사·VAN사·금융사와의 협의로 결제 인프라를 만들고 바꾼 프로젝트 5건을 <b>문제 → 실행 → 결과</b> 순서로 정리했습니다.</p>
+
+      <div class="kpi" style="margin-bottom:22px">
+        <div class="on"><small>협의 카드사</small><strong class="num">9<em>개사</em></strong><p>개별 협의로 한도·개설·정산</p></div>
+        <div><small>매입 VAN 다중화</small><strong class="num">0<em>건</em></strong><p>오픈 장애 (PM, 3개월)</p></div>
+        <div><small>SQL 직접 추출</small><strong class="num">20,000<em>건+</em></strong><p>차액정산 반송 대상</p></div>
+        <div class="on"><small>구비서류 리드타임</small><strong class="num">−50<em>%</em></strong><p>AI 자동화</p></div>
+      </div>
+
+      <div class="st"><span>☰</span><h2>프로젝트 목록</h2></div>
+      <table class="tbl">
+        <thead><tr><th class="c">No</th><th>프로젝트</th><th>역할</th><th>핵심 결과</th></tr></thead>
+        <tbody>
+          <tr><td class="c"><b>01</b></td><td>넥슨 Npay 신용카드 결제 오픈 · 9개 카드사 한도 협의</td><td>카드사 협의</td><td>한 카드사 기준 일 한도 20배</td></tr>
+          <tr><td class="c"><b>02</b></td><td>매입 VAN 다중화 · 신규 매입 VAN사 연동</td><td>PM</td><td>QA 64건 검증, 장애 0건 오픈</td></tr>
+          <tr><td class="c"><b>03</b></td><td>매입결과파일 포맷 변경 · 건별 수수료 분리</td><td>기획·협의</td><td>연동 VAN사 전체 동일 일자 반영</td></tr>
+          <tr><td class="c"><b>04</b></td><td>차액정산 반송 대상 SQL 추출</td><td>데이터 추출</td><td>20,000건 이상 직접 특정</td></tr>
+          <tr><td class="c"><b>05</b></td><td>AI 기반 카드사 구비서류 자동화</td><td>기획·구축</td><td>리드타임 약 50% 단축</td></tr>
+        </tbody>
+      </table>
+
+      <div class="st"><span>⚙</span><h2>상시 운영 지표</h2></div>
+      <div class="row row--3">
+        <div class="box box--tint"><h4>결제·취소 실패 대응</h4><span class="big num">주 3<em>건</em></span><p class="cap">평균 1일 내 원인 파악·해소</p></div>
+        <div class="box box--tint"><h4>가맹점 동시 개설</h4><span class="big num">최대 12<em>개</em></span><p class="cap">서비스 요청 1건 기준 (3~12개)</p></div>
+        <div class="box box--tint"><h4>카드사 매출 분리 요청</h4><span class="big">전건<em>처리</em></span><p class="cap">제휴카드 미적용 민원 대응</p></div>
+      </div>
+      <span class="page__foot">장소은 포트폴리오 · 1</span>
+    </section>
+
+    <!-- P2 : 01 넥슨 -->
+    <section class="page reveal">
+      <div class="pf-title"><span class="pj__no">01</span><div><h2>넥슨 Npay 신용카드 결제 오픈 · 9개 카드사 한도 협의</h2><p>2025.10.16 오픈 · 카드사 협의 담당</p></div></div>
+
+      <div class="flow" style="margin-bottom:12px">
+        <div><b>요청</b>넥슨·네오플 그룹사 간 동일 게임 한도 적용</div>
+        <div><b>장애물</b>카드사: 매출 이력·민원 데이터상 동일 한도 곤란</div>
+        <div><b>실행</b>9개 카드사 개별 컨택, 가맹점 규모 등 소명 자료 제출</div>
+        <div class="on"><b>결과</b>9개 카드사 한도 확정 후 Npay 신용카드 결제 오픈</div>
+      </div>
+
+      <div class="row row--12">
+        <div class="box box--tint">
+          <h4>협의 논리</h4>
+          <ul>
+            <li>게임은 환금성 업종 → 카드사별 별도 한도 (일 10만~50만 원 수준)</li>
+            <li>사후 대응 중심인 카드사 방식의 한계 제시</li>
+            <li>한도 불일치 시 고객 결제 혼란·민원 증가 가능성 소명</li>
+            <li>가맹점 규모 등 근거 자료로 선제 소명</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4>한 카드사 기준 일 한도 (만 원)</h4>
+          <div class="bars-wrap"><div class="bars">
+            <div><i style="--h:5%"><span>50</span></i><label>기존</label></div>
+            <div><i class="y" style="--h:100%"><span>1,000 (20배)</span></i><label>협의 후</label></div>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom:12px">
+        <h4>공개 한도표 · 넥슨 Npay 신용카드 (넥슨캐시·세라, 단위 만 원)</h4>
+        <table class="heat">
+          <thead><tr><th></th><th>하나</th><th>롯데</th><th>현대</th><th>국민</th><th>비씨</th><th>삼성</th><th>신한</th><th>농협</th><th>우리</th></tr></thead>
+          <tbody>
+            <tr><th>1회</th><td class="none">없음</td><td class="none">없음</td><td class="h3">1,000</td><td class="none">없음</td><td class="none">없음</td><td class="h1">50</td><td class="h1">50</td><td class="none">없음</td><td class="h1">50</td></tr>
+            <tr><th>1일</th><td class="h1">50</td><td class="none">없음</td><td class="h3">1,000</td><td class="none">없음</td><td class="h3">1,000</td><td class="h1">50</td><td class="h2">300</td><td class="h2">300</td><td class="h1">50</td></tr>
+            <tr><th>1월</th><td class="none">없음</td><td class="h3">1,000</td><td class="h3">1,000</td><td class="h3">1,000</td><td class="none">없음</td><td class="none">없음</td><td class="h3">1,000</td><td class="h2">300</td><td class="none">없음</td></tr>
+          </tbody>
+        </table>
+        <p class="src">출처: 메이플스토리 공지 「신규 결제수단 Npay(네이버페이) 신용카드 오픈 안내」 (2025.10.16) · “없음” = 해당 기준 한도 미설정</p>
+      </div>
+
+      <div class="row row--3">
+        <div class="box box--y"><h4>협의 카드사</h4><span class="big num">9<em>개사</em></span><p class="cap">개별 컨택·소명</p></div>
+        <div class="box box--ink"><h4>일 300만 원 이상 또는 일 한도 미설정</h4><span class="big num">6<em>/ 9개사</em></span><p class="cap">공개 한도표 기준</p></div>
+        <div class="box"><h4>오픈 후 결제 오류 이슈</h4><span class="big num">0<em>건</em></span><p class="cap">카드 결제 오류 기준</p></div>
+      </div>
+      <span class="page__foot">장소은 포트폴리오 · 2</span>
+    </section>
+
+    <!-- P3 : 02 VAN 다중화 -->
+    <section class="page reveal">
+      <div class="pf-title"><span class="pj__no">02</span><div><h2>매입 VAN 다중화 · 신규 매입 VAN사 연동</h2><p>2026.07 – 2026.10 (약 3개월) · PM</p></div></div>
+
+      <div class="row row--2">
+        <div class="box box--tint">
+          <h4>문제</h4>
+          <ul>
+            <li>거래 안정화를 위한 매입 경로 다중화 필요</li>
+            <li>매입 오류는 정산·가맹점 신뢰로 직결 → 무중단 전환 필수</li>
+          </ul>
+          <h4 style="margin-top:12px">구성</h4>
+          <div class="team"><span class="me">PM 장소은</span><span>개발 메인 1</span><span>개발 서브 2 (멘토·리더)</span><span>매입 VAN사</span></div>
+        </div>
+        <div class="box">
+          <h4>매입 경로 구조</h4>
+          <div class="ba ba--v">
+            <div class="rec"><div class="rec__cap">BEFORE</div><div><span>매입 경로</span><span>VAN 단일</span></div><div><span>리스크</span><span>경로 의존</span></div></div>
+            <div class="ba__arrow">→</div>
+            <div class="rec"><div class="rec__cap">AFTER</div><div class="hl"><span>매입 경로</span><span>VAN 다중</span></div><div><span>효과</span><span>거래 안정화</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom:12px">
+        <h4>PM 수행 단계</h4>
+        <div class="flow">
+          <div><b>기획·협의</b>VAN사·개발자와 연동 스펙, 운영 정책 정의</div>
+          <div><b>엣지케이스</b>운영 중 발생 가능한 예외 도출</div>
+          <div><b>QA</b>Confluence 시나리오 작성, 테스트 결제 직접 생성</div>
+          <div class="on"><b>배포·모니터링</b>오픈 후 운영 이슈 대응</div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom:12px">
+        <h4>QA 시나리오 매트릭스 · 4단계 × 16건</h4>
+        <div class="qa" id="qa"></div>
+        <div class="qa__foot"><span>■ 1칸 = 시나리오 1건 (Confluence 문서화)</span><span>합계 <b>64건</b> 검증</span></div>
+      </div>
+
+      <div class="row row--3">
+        <div class="box box--y"><h4>오픈 장애</h4><span class="big num">0<em>건</em></span><p class="cap">무중단 전환</p></div>
+        <div class="box box--ink"><h4>QA 시나리오</h4><span class="big num">64<em>건</em></span><p class="cap">승인·매입·차액정산·반기환급</p></div>
+        <div class="box"><h4>수행 기간</h4><span class="big num">3<em>개월</em></span><p class="cap">기획부터 배포·모니터링까지</p></div>
+      </div>
+      <span class="page__foot">장소은 포트폴리오 · 3</span>
+    </section>
+
+    <!-- P4 : 03 포맷 + 04 SQL -->
+    <section class="page reveal">
+      <div class="pf-title"><span class="pj__no">03</span><div><h2>매입결과파일 포맷 변경 · 건별 수수료 분리 수신</h2><p>기획·협의 · 연동 VAN사 전체 동시 반영</p></div></div>
+      <div class="row row--2">
+        <div class="box">
+          <h4>데이터 구조 변경</h4>
+          <div class="ba">
+            <div class="rec"><div class="rec__cap">BEFORE</div><div><span>단위</span><span>총액</span></div><div class="hl"><span>수수료</span><span>합계 1개 값</span></div></div>
+            <div class="ba__arrow">→</div>
+            <div class="rec"><div class="rec__cap">AFTER</div><div><span>단위</span><span>거래 건별</span></div><div class="hl"><span>기본 수수료</span><span>건별 값</span></div><div class="hl"><span>제휴 수수료</span><span>건별 값</span></div></div>
+          </div>
+        </div>
+        <div class="box">
+          <h4>반영 일정 · 연동 VAN사 전체 동일 일자</h4>
+          <div class="sync">
+            <div><b>VAN사 1</b><span class="track"><s></s><i></i></span><b class="d">D-Day</b></div>
+            <div><b>VAN사 2</b><span class="track"><s></s><i></i></span><b class="d">D-Day</b></div>
+            <div><b>VAN사 n</b><span class="track"><s></s><i></i></span><b class="d">D-Day</b></div>
+          </div>
+          <p class="src">VAN사 수는 대외비로 표기하지 않음 · 막대 = 협의·개발 진행, 세로선 = 동일 반영일</p>
+          <ul style="margin-top:8px">
+            <li>내부 로직상 전 VAN사 동일 포맷이 필수 → 동시 협의</li>
+            <li>결과: 동일 일자 반영, <b>이슈 0건</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pf-title" style="margin-top:26px"><span class="pj__no">04</span><div><h2>차액정산 반송 대상 SQL 직접 추출</h2><p>데이터 추출 · 카드사 협의</p></div></div>
+      <div class="flow" style="margin-bottom:12px">
+        <div><b>문제</b>우대 수수료 차액정산 반송 대량 발생</div>
+        <div><b>탐색</b>Zeppelin에서 관련 테이블 탐색·조인</div>
+        <div><b>추출</b>카드사·하위몰 사업자번호·기간 조건</div>
+        <div class="on"><b>결과</b>반송 대상 20,000건+ 특정 → 카드사 협의</div>
+      </div>
+      <div class="row row--12">
+        <div class="box box--y"><h4>직접 추출 건수</h4><span class="big num">20,000<em>건+</em></span><p class="cap">개발 요청 없이 대상 확정</p></div>
+        <div>
+          <div class="code"><span class="c">-- 조회 로직 요약 (실제 테이블·컬럼명은 비공개)</span>
+<span class="k">SELECT</span> 카드사, 하위몰_사업자번호, <span class="k">COUNT</span>(*) <span class="k">AS</span> 반송건수
+<span class="k">FROM</span>   차액정산_응답 r
+<span class="k">JOIN</span>   가맹점_정보 m <span class="k">ON</span> r.가맹점번호 = m.가맹점번호
+<span class="k">WHERE</span>  r.응답구분 = '반송'
+  <span class="k">AND</span>  r.카드사 = :카드사
+  <span class="k">AND</span>  m.사업자번호 = :하위몰_사업자번호
+  <span class="k">AND</span>  r.응답일자 <span class="k">BETWEEN</span> :시작일 <span class="k">AND</span> :종료일
+<span class="k">GROUP BY</span> 카드사, 하위몰_사업자번호;</div>
+        </div>
+      </div>
+      <span class="page__foot">장소은 포트폴리오 · 4</span>
+    </section>
+
+    <!-- P5 : 05 AI -->
+    <section class="page reveal">
+      <div class="pf-title"><span class="pj__no">05</span><div><h2>AI 기반 카드사 구비서류 자동 작성 프로그램</h2><p>기획·구축 · Claude</p></div></div>
+      <div class="row row--2">
+        <div class="box box--tint">
+          <h4>문제</h4>
+          <ul>
+            <li>가맹점번호 채번 시 9개 카드사 양식을 수기 작성</li>
+            <li>같은 정보 반복 입력 → 시간 소모·휴먼에러</li>
+            <li>제휴카드 미적용 민원에 따른 매출 분리 요청으로 개설 건 누적</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h4>작성 리드타임 (도입 전 = 100)</h4>
+          <div class="bars-wrap"><div class="bars">
+            <div><i style="--h:100%"><span>100</span></i><label>도입 전</label></div>
+            <div><i class="y" style="--h:50%"><span>약 50</span></i><label>도입 후</label></div>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom:12px">
+        <h4>처리 구조 · 1회 입력 → 카드사별 서류 생성</h4>
+        <div class="fan">
+          <div class="fan__in"><b>공통 입력 (1회)</b>신청일 · 간판명 · 대금 입금계좌 · 채번 요청자 정보</div>
+          <b class="ba__arrow">→</b>
+          <div class="fan__out">
+            <span class="on">카드사 A 양식</span><span class="on">카드사 B 양식</span><span class="on">카드사 C 양식</span>
+            <span class="on">카드사 D 양식</span><span class="on">카드사 E 양식</span><span class="on">카드사 F 양식</span>
+            <span class="on">카드사 G 양식</span><span class="on">카드사 H 양식</span><span class="on">카드사 I 양식</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row--3">
+        <div class="box box--y"><h4>작성 리드타임</h4><span class="big num">−50<em>%</em></span><p class="cap">수기 입력 대비</p></div>
+        <div class="box box--ink"><h4>매출 분리 요청</h4><span class="big">전건<em>처리</em></span><p class="cap">개설 적체 해소</p></div>
+        <div class="box"><h4>수기 입력 오류</h4><span class="big">방지</span><p class="cap">공통 항목 1회 입력</p></div>
+      </div>
+
+      <div class="st" style="margin-top:28px"><span>+</span><h2>그 외 금융사 연동 · 신규 서비스</h2></div>
+      <table class="tbl">
+        <tbody>
+          <tr><th>삼성페이머니 연동</th><td>네이버페이–삼성페이머니 연동용 우리은행 연계 가맹점번호(토큰) 세팅</td></tr>
+          <tr><th>화이트라벨 서비스</th><td>화이트라벨 서비스 오픈을 위한 카드 결제 인프라 준비 기여</td></tr>
+          <tr><th>카드 혜택 대상 관리</th><td>가맹점번호 단위 카드 상품 혜택 대상을 카드사·내부 제휴 담당자와 관리</td></tr>
+        </tbody>
+      </table>
+      <span class="page__foot">장소은 포트폴리오 · 5</span>
+    </section>
+
+    <!-- P6 : 직무 연결 -->
+    <section class="page reveal">
+      <div class="st"><span>→</span><h2>카카오페이 직무와의 연결</h2><small>공고 담당 업무 기준</small></div>
+      <table class="tbl">
+        <thead><tr><th>공고 담당 업무</th><th>검증된 경험</th><th>바로 적용할 수 있는 역량</th></tr></thead>
+        <tbody>
+          <tr><th>내 카드 머니 연결<br />카드사·금융사 확대</th><td>9개 카드사 개별 협의로 한도 확정·결제 오픈<br />우리은행 연계 가맹점번호(토큰) 세팅</td><td>카드사·은행별 요건 확인과 개별 협의 진행</td></tr>
+          <tr><th>페이카드 상품<br />기획·운영</th><td>가맹점번호 단위 카드 혜택 대상 관리<br />무이자 할부 행사 관리</td><td>카드사 혜택이 실제 결제에 적용되는 구조 이해</td></tr>
+          <tr><th>제휴 구조 설계·협의</th><td>건별 기본·제휴 수수료 분리 수신 구조 설계</td><td>수수료 데이터 단위까지 고려한 제휴 조건 정리</td></tr>
+          <tr><th>가입·결제·이용 데이터<br />직접 추출·분석</th><td>SQL(Zeppelin) 테이블 조인으로 2만 건+ 직접 추출</td><td>개발 요청 없이 필요한 데이터를 직접 확보</td></tr>
+          <tr><th>PM·개발자·디자이너와<br />과제 실행</th><td>매입 VAN 다중화 PM, QA 64건 설계·검증</td><td>요건 정의부터 QA·배포·모니터링까지 일정 관리</td></tr>
+          <tr><th>규제 준수<br />(여전법 등)</th><td>여전법 기준 가맹점·한도·소득공제 정책 운영</td><td>신규 서비스의 카드 규정 검토</td></tr>
+        </tbody>
+      </table>
+
+      <div class="st"><span>✓</span><h2>일하는 방식</h2></div>
+      <div class="close3">
+        <div><h4><i>1</i>선제적 소명</h4><p>문제 발생 전 데이터 기반 논리를 준비합니다.<br /><b>근거</b> 9개 카드사 한도 협의, 일 한도 20배</p></div>
+        <div><h4><i>2</i>빈틈없는 검증</h4><p>예외 상황을 시나리오로 먼저 검증합니다.<br /><b>근거</b> QA 64건, 장애 0건 오픈</p></div>
+        <div><h4><i>3</i>반복 업무 자동화</h4><p>반복은 SQL·AI로 직접 줄입니다.<br /><b>근거</b> 2만 건+ 추출, 리드타임 50% 단축</p></div>
+      </div>
+
+      <div class="box box--ink" style="margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div><b style="font-size:17px">카드사·금융사 협의 경험으로 연결 서비스 확대에 바로 기여하겠습니다.</b></div>
+        <div style="font-size:13px;color:#cfcfcf">thdms5478@naver.com</div>
+      </div>
+      <span class="page__foot">장소은 포트폴리오 · 6</span>
+    </section>
+  </main>
+
+  <footer class="foot">© 2026 장소은</footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

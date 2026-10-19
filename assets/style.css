@@ -348,3 +348,8 @@ img { display: block; max-width: 100%; }
 .stages > div:last-child::after { content: none; }
 .stages b { display: block; font-size: 16px; }
 .stages span { font-size: 12.5px; color: var(--green); font-weight: 700; }
+
+.kpi--7 { grid-template-columns: repeat(12, 1fr); }
+.kpi--7 > div { grid-column: span 3; }
+.kpi--7 > div:nth-child(n+5) { grid-column: span 4; }
+@media screen and (max-width: 760px) { .kpi--7 > div, .kpi--7 > div:nth-child(n+5) { grid-column: span 6; } }

@@ -44,7 +44,7 @@
       </p>
 
       <div class="st"><span>B</span><h2>핵심 역량</h2></div>
-      <div class="cap4">
+      <div class="caprow">
         <div><b>가맹점 · 한도</b><p>가맹점번호·단말기 ID 채번부터 카드사 심사, PG·환금성 업종 한도 협의까지</p></div>
         <div><b>매입 · 정산</b><p>매입 VAN 연동, 매입전문 포맷 설계, 차액정산, 내부 회계 처리 기준 협의</p></div>
         <div><b>규제 · 세무</b><p>여신전문금융업법 기준 정책 운영, 소득공제 대상·제외 정책, 연말정산 대사</p></div>
@@ -81,7 +81,7 @@
       <div class="grp">
         <h3><i>A</i>카드 결제인프라 운영</h3>
         <div class="li"><b>가맹점 개설·운영</b><ul>
-          <li>9개 카드사 대상 가맹점번호·단말기 ID 채번 → 어드민 세팅 → 하위몰 심사 → QA → 실매출 전 과정</li>
+          <li>9개 카드사 가맹점번호·단말기 ID 채번부터 심사·QA·실매출까지 전 과정 담당</li>
           <li>하위몰 심사 반송 시 사유 파악 및 보완 협의로 심사 통과</li>
           <li>게임·해외사업자·2차PG 등 카드사 유의업종 입점 협의</li>
         </ul></div>
@@ -203,20 +203,20 @@
     <!-- PAGE 4 : 주요 경력기술서 2 -->
     <section data-run="장소은 · 경력기술서  |  2. 주요 경력기술서" class="page">
       <div class="pj">
-        <div class="pj__head"><span class="pj__no">2-3</span><div><h3>매입결과파일 포맷 변경 · 건별 수수료 분리 수신</h3><p>제휴 수수료 구조 · 다자간 협의</p></div></div>
+        <div class="pj__head"><span class="pj__no">2-3</span><div><h3>매입결과파일 포맷 변경 · 건별 수수료 추가 수신</h3><p>제휴 수수료 구조 · 다자간 협의</p></div></div>
         <div class="bra">
           <div><b>배경</b><ul>
-            <li>VAN사로부터 수수료 총액만 수신해 건별 수수료 구성(기본·제휴) 확인 불가</li>
+            <li>VAN사로부터 수수료 총합만 수신해 건별 기본·제휴 수수료 확인 불가</li>
             <li>내부 로직상 연동 VAN사 전체가 동일 포맷이어야 처리 가능</li>
           </ul></div>
           <div><b>역할 및 수행</b><ul>
-            <li>건별 단위로 기본 수수료·제휴 수수료를 나눠 받는 매입결과파일 포맷 기획</li>
+            <li>기존 총합은 유지하고 건별 기본·제휴 수수료를 함께 받는 포맷 기획</li>
             <li>개발 부서와 내부 반영 범위 정의</li>
             <li>연동 VAN사 전체와 변경 스펙 동시 협의, 반영일 통일</li>
           </ul></div>
           <div class="res"><b>성과 및 회고</b><ul>
             <li>연동 VAN사 전체 <b>동일 일자·동일 포맷</b> 반영, 이슈 0건</li>
-            <li>건 단위 기본·제휴 수수료 데이터 수신 체계 확보로 매입 데이터 정합성 강화</li>
+            <li>기존 총합에 건별 기본·제휴 수수료 데이터를 더해 매입 데이터 정합성 강화</li>
           </ul></div>
         </div>
       </div>
@@ -264,19 +264,23 @@
     <section data-run="장소은 · 경력기술서  |  3–5. 기타 · 역량 · 이전 경력" class="page">
       <div class="st"><span>3</span><h2>기타 경력기술서</h2></div>
       <p class="lead" style="margin-bottom:8px"><b>3-1 주요 신규 결제 서비스 출시 참여</b> · 사내 출시 공지 참여자 기재 기준</p>
-      <table class="tbl">
-        <thead><tr><th>출시</th><th>공개 서비스 내용</th><th>담당</th></tr></thead>
+      <table class="tbl tbl--launch">
+        <thead><tr><th>출시</th><th>서비스</th><th>담당</th></tr></thead>
         <tbody>
-          <tr><th>2025.01<br />네이버 현대카드 Edition2</th><td>네이버 제휴 신용카드 출시</td><td>서비스별 매출 발생 가맹점번호 구분으로 적립 대상 가맹점번호 구분</td></tr>
-          <tr><th>2025.10<br />넥슨 Npay 신용·체크카드 결제</th><td>넥슨캐시 등 디지털콘텐츠 Npay 신용·체크카드 결제 오픈</td><td>9개 카드사 신용·체크카드 한도 협의</td></tr>
-          <tr><th>2026.04<br />삼성월렛 머니</th><td>은행 화이트라벨 선불전자지급수단을 Npay 결제수단으로 도입</td><td>결제수단 도입용 가맹점번호 채번</td></tr>
-          <tr><th>2026.10<br />국민행복카드 바우처</th><td>정부 물품 바우처 6개 전 카드사 결제 연동</td><td>결제용 가맹점번호 채번</td></tr>
+          <tr><th>2025.01</th><td>네이버 현대카드 Edition2 출시</td><td>적립 대상 가맹점번호 구분</td></tr>
+          <tr><th>2025.10</th><td>넥슨 Npay 신용·체크카드 결제 오픈</td><td>9개 카드사 한도 협의</td></tr>
+          <tr><th>2026.04</th><td>삼성월렛 머니 결제수단 도입</td><td>가맹점번호 채번</td></tr>
+          <tr><th>2026.10</th><td>국민행복카드 바우처 결제 연동</td><td>가맹점번호 채번</td></tr>
         </tbody>
       </table>
-      <p class="src">관련 자료 · <a href="https://navercorp.com/media/pressReleasesDetail?seq=33381">네이버 보도자료 「네이버-넥슨 전략적 업무협약 체결」 (2025.09.30)</a> · <a href="https://biz.sbs.co.kr/amp/article/20000340337">SBS Biz 「국민행복카드 바우처를 이제 네이버페이로…전용관 오픈」 (2026.10)</a> · <a href="https://www.card-gorilla.com/contents/detail/3561">카드고릴라 「네이버 현대카드 에디션2 출시」</a></p>
+      <ul class="refs">
+        <li>관련 자료 · <a href="https://navercorp.com/media/pressReleasesDetail?seq=33381">네이버 보도자료 「네이버-넥슨 전략적 업무협약 체결」 (2025.09.30)</a></li>
+        <li>관련 자료 · <a href="https://biz.sbs.co.kr/amp/article/20000340337">SBS Biz 「국민행복카드 바우처를 이제 네이버페이로…전용관 오픈」 (2026.10)</a></li>
+        <li>관련 자료 · <a href="https://www.card-gorilla.com/contents/detail/3561">카드고릴라 「네이버 현대카드 에디션2 출시」</a></li>
+      </ul>
       <table class="tbl" style="margin-top:10px">
         <tbody>
-          <tr><th>3-2 화이트라벨 서비스</th><td>화이트라벨 서비스 오픈을 위한 카드 결제 인프라 준비에 기여</td></tr>
+          <tr><th>3-2 화이트라벨</th><td>화이트라벨 서비스 오픈을 위한 카드 결제 인프라 준비에 기여</td></tr>
 </tbody>
       </table>
 
@@ -288,7 +292,7 @@
           <tr><th>Jira</th><td>개발 요건 이슈 생성 및 진행 관리</td></tr>
           <tr><th>Excel · Word (상)</th><td>9개 카드사 한도·정책 취합, 대사 자료, 구비서류·공문 작성</td></tr>
           <tr><th>NAVER 사내 BI</th><td>HTML 기반 데이터 시각화</td></tr>
-          <tr><th>AI 기반 자동화 · VS Code</th><td>구비서류 자동화 프로그램, 포트폴리오 웹사이트 제작·배포</td></tr>
+          <tr><th>AI · VS Code</th><td>구비서류 자동화 프로그램, 포트폴리오 웹사이트 제작·배포</td></tr>
           <tr><th>Figma · Notion</th><td>기획 화면 확인, 업무 문서화</td></tr>
         </tbody>
       </table>

@@ -332,3 +332,19 @@ img { display: block; max-width: 100%; }
 @media print { .page::before { margin: -4mm 0 6mm; } }
 @media screen and (max-width: 760px) { .page::before { margin: -10px 0 16px; } }
 @media print { .bars { height: 120px; } .bars i span { top: -18px; } .launch > div { padding: 7px 12px; } }
+
+/* 소개형 1장 */
+.lead.summary { font-size: 15px; line-height: 1.85; color: var(--ink); margin-bottom: 4px; }
+.cap4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.cap4 > div { padding: 16px; border-radius: 14px; border: 1px solid var(--line); }
+.cap4 b { display: block; font-size: 14.5px; padding-bottom: 8px; margin-bottom: 8px; border-bottom: 2px solid var(--y); width: max-content; }
+.cap4 p { font-size: 12.8px; color: var(--ink-2); line-height: 1.6; }
+.launch > div { grid-template-columns: 70px 220px 1fr; }
+@media screen and (max-width: 760px) { .cap4 { grid-template-columns: 1fr 1fr; } .launch > div { grid-template-columns: 60px 1fr; } .launch p { grid-column: 2; } }
+
+.stages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.stages > div { position: relative; padding: 16px; border-radius: 12px; background: var(--tint); text-align: center; }
+.stages > div::after { content: "→"; position: absolute; right: -9px; top: 50%; transform: translateY(-50%); font-weight: 800; }
+.stages > div:last-child::after { content: none; }
+.stages b { display: block; font-size: 16px; }
+.stages span { font-size: 12.5px; color: var(--green); font-weight: 700; }

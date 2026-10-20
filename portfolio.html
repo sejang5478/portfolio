@@ -39,8 +39,8 @@
         <thead><tr><th class="c">No</th><th>사례</th><th>핵심</th></tr></thead>
         <tbody>
           <tr><td class="c"><b>01</b></td><td>넥슨 회원 통합 기반 결제 오픈</td><td>오픈 1주일 전 발견한 인증 차이를 카드사별로 해소</td></tr>
-          <tr><td class="c"><b>02</b></td><td>매입사(VAN) 확대 · PM</td><td>카드사·VAN사 일정을 맞춰 장애 없이 운영 전환</td></tr>
-          <tr><td class="c"><b>03</b></td><td>신규 업종 · 제휴카드 대응</td><td>카드사 정책과 화면 안내를 일치시켜 CS 사전 차단</td></tr>
+          <tr><td class="c"><b>02</b></td><td>매입사(VAN) 확대 · PM</td><td>이중화 순서를 정하고 카드사·VAN사 일정을 맞춰 운영 전환</td></tr>
+          <tr><td class="c"><b>03</b></td><td>신규 업종 · 결제수단 · 제휴카드</td><td>카드사 정책과 화면 안내를 일치시켜 오안내 소지 제거</td></tr>
           <tr><td class="c"><b>04</b></td><td>AI로 일하는 방식</td><td>바이브코딩·AI 에이전트로 반복 업무 자동화</td></tr>
         </tbody>
       </table>
@@ -58,10 +58,10 @@
 
     <!-- P2 : 01 넥슨 -->
     <section data-run="장소은 · 포트폴리오  |  01. 넥슨 회원 통합 기반 결제 오픈" class="page reveal">
-      <div class="pf-title"><span class="pj__no">01</span><div><h2>넥슨 회원 통합 기반 결제 오픈</h2><p>2026.05 오픈 · 카드사 협의</p></div></div>
+      <div class="pf-title"><span class="pj__no">01</span><div><h2>넥슨 회원 통합 기반 결제 오픈</h2><p>2026.03 – 2026.05 · 카드사 협의 주담당</p></div></div>
 
       <div class="flow" style="margin-bottom:12px">
-        <div><b>배경</b>넥슨–네이버페이<br />회원 통합</div>
+        <div><b>사전 협의 · 3–4월</b>카드사별 게임<br />한도 취합·상향 협의</div>
         <div><b>발견 · 5/11</b>베타 테스트에서<br />인증 정책 차이 확인</div>
         <div><b>협의 · 5/12–5/15</b>카드사별 공문으로<br />맞춤 요청</div>
         <div class="on"><b>오픈 · 5/18</b>카드사별 인증 정책<br />적용 확인</div>
@@ -77,6 +77,15 @@
             <tr><th>카드사 C</th><td>게임 업종 일 한도 제한</td><td>예외 승인한도 상향</td><td>일 1,000만 원</td></tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="box" style="margin-bottom:12px">
+        <h4>의사결정 포인트 · 한도 상향 조건으로 부정거래 책임 배상을 요구받았을 때</h4>
+        <div class="row row--2" style="margin:0">
+          <div class="rec"><div class="rec__cap">안 1 · 조건 수용</div><div><span>한도</span><span>기존 결제 환경 수준으로 상향</span></div><div><span>부담</span><span>부정거래 시 책임 배상</span></div></div>
+          <div class="rec"><div class="rec__cap">안 2 · 조건 미수용</div><div><span>한도</span><span>기본 한도로 제한</span></div><div><span>부담</span><span>회원 통합 후 결제 불편</span></div></div>
+        </div>
+        <p class="src">선례 유무와 두 안의 한도를 비교해 의사결정 요청 → 안 1로 결정, 책임 배상 문구를 담아 공문 반영</p>
       </div>
 
       <div class="row row--3">
@@ -96,10 +105,15 @@
 
       <div class="row row--2">
         <div class="box box--tint">
-          <h4>목표</h4>
+          <h4>왜 했나</h4>
           <ul>
-            <li>일부 카드사 매입을 대형 VAN사로 확대</li>
-            <li>매입 경로를 다중화해 거래 안정성 확보</li>
+            <li>매입 VAN이 하나면 장애가 매입 전체에 영향</li>
+            <li>팀의 매입 VAN 이중화 전략을 PM으로 실행</li>
+          </ul>
+          <h4 style="margin-top:12px">진행 순서 판단</h4>
+          <ul>
+            <li>매입 데이터 개선 먼저, 매입사 추가는 다음</li>
+            <li>전체가 아닌 일부 카드사부터 단계적 확대</li>
           </ul>
           <h4 style="margin-top:12px">조율 대상</h4>
           <div class="partners"><span class="on">카드사</span><span>기존 VAN사</span><span>신규 VAN사</span><span>사내 개발</span></div>
@@ -107,9 +121,9 @@
         <div class="box">
           <h4>매입 경로 구조</h4>
           <div class="ba ba--v">
-            <div class="rec"><div class="rec__cap">BEFORE</div><div><span>매입 경로</span><span>기존 VAN사</span></div></div>
+            <div class="rec"><div class="rec__cap">BEFORE</div><div><span>매입 경로</span><span>A 매입사</span></div></div>
             <div class="ba__arrow">→</div>
-            <div class="rec"><div class="rec__cap">AFTER</div><div class="hl"><span>매입 경로</span><span>기존 VAN사 + 대형 VAN사</span></div></div>
+            <div class="rec"><div class="rec__cap">AFTER</div><div class="hl"><span>매입 경로</span><span>A 매입사 + B 매입사</span></div></div>
           </div>
         </div>
       </div>
@@ -117,12 +131,12 @@
       <div class="box" style="margin-bottom:12px">
         <h4>진행 일정</h4>
         <div class="timeline">
-          <div><b>07월</b><span>착수 · 연동 기획</span></div>
-          <div><b>08.13</b><span>QA 시나리오 공유</span></div>
-          <div><b>08.20</b><span>테스트 방식 전환</span></div>
-          <div><b>09.07</b><span>통합 테스트</span></div>
-          <div><b>09.30</b><span>승인 실적 이원화</span></div>
-          <div class="on"><b>10.01</b><span>운영 전환</span></div>
+          <div><b>7월</b><span>착수 · 연동 기획</span></div>
+          <div><b>8월</b><span>QA 시나리오 공유</span></div>
+          <div><b>8월</b><span>테스트 방식 전환</span></div>
+          <div><b>9월</b><span>통합 테스트</span></div>
+          <div><b>9월 말</b><span>승인 실적 이원화</span></div>
+          <div class="on"><b>10월</b><span>운영 전환</span></div>
         </div>
       </div>
 
@@ -138,7 +152,7 @@
           <h4>해결</h4>
           <ul>
             <li>VAN사가 결과파일을 생성하는 방식으로 테스트 전환</li>
-            <li>전 VAN사 반영일을 10.01로 통일해 재조율</li>
+            <li>전 VAN사 반영일을 운영 전환일로 통일해 재조율</li>
           </ul>
         </div>
       </div>
@@ -146,8 +160,8 @@
     </section>
 
     <!-- P4 : 03 신규 업종 · 제휴카드 -->
-    <section data-run="장소은 · 포트폴리오  |  03. 신규 업종 · 제휴카드 대응" class="page reveal">
-      <div class="pf-title"><span class="pj__no">03</span><div><h2>신규 업종 · 제휴카드 대응</h2><p>카드사 정책을 고객 결제에 정확히 반영</p></div></div>
+    <section data-run="장소은 · 포트폴리오  |  03. 신규 업종 · 결제수단 · 제휴카드" class="page reveal">
+      <div class="pf-title"><span class="pj__no">03</span><div><h2>신규 업종 · 결제수단 · 제휴카드</h2><p>카드사·기관 정책을 고객 결제에 정확히 반영</p></div></div>
 
       <div class="box" style="margin-bottom:12px">
         <h4>수입 신차 판매 결제 오픈 · 2026.08</h4>
@@ -155,7 +169,7 @@
           <div class="rec"><div class="rec__cap">문제</div><div><span>화면 안내</span><span>온라인 공통 무이자 노출</span></div><div class="hl"><span>실제 적용</span><span>신차 업종은 무이자 제외</span></div></div>
           <div class="rec"><div class="rec__cap">해결</div><div><span>대상</span><span>9개 카드사</span></div><div class="hl"><span>조치</span><span>무이자 안내 예외 설정</span></div></div>
         </div>
-        <p class="src">업종 무이자 적용 여부는 카드사가 판단 · 화면과 실제 할부 조건을 일치시켜 고객 CS 사전 차단</p>
+        <p class="src">업종 무이자 적용 여부는 카드사가 판단 · 화면과 실제 할부 조건을 일치시켜 무이자 오안내 소지 제거</p>
       </div>
 
       <div class="box" style="margin-bottom:12px">
@@ -170,9 +184,16 @@
       <div class="box">
         <h4>국민행복카드 정부 바우처 결제 연동 · 2026.10</h4>
         <ul>
-          <li>바우처 용도에 맞는 서비스·거래 구조 확인</li>
-          <li>카드사별 가맹점번호 채번으로 서비스 적용 조건 마련</li>
+          <li>역할(지원): 바우처 전용 가맹점번호 채번, 카드사별 간판명 등록 공문 협의</li>
           <li>결과: 국민행복카드 6개 전 카드사 결제 연동 오픈</li>
+        </ul>
+      </div>
+
+      <div class="box" style="margin-top:12px">
+        <h4>삼성월렛 머니(선불) 결제수단 도입 · 2026.04</h4>
+        <ul>
+          <li>역할(지원): 문화비 소득공제 전용 가맹점번호를 한국문화정보원과 협의·등록</li>
+          <li>결과: 선불 결제수단에서도 문화비 소득공제 적용 기반 마련</li>
         </ul>
       </div>
       <ul class="refs">
@@ -231,18 +252,18 @@
       <table class="tbl">
         <thead><tr><th>서비스</th><th>이해하고 있는 구조</th><th>연결되는 경험</th></tr></thead>
         <tbody>
-          <tr><th>페이머니카드</th><td>충전 잔액으로 결제하는 선불카드</td><td>선불 결제수단 도입 참여</td></tr>
-          <tr><th>페이체크카드</th><td>결제계좌에서 바로 출금되는 체크카드</td><td>체크카드 승인·매입 흐름 운영</td></tr>
-          <tr><th>페이신용카드</th><td>혜택이 가맹점번호·업종 코드로 적용</td><td>제휴카드 매출 분리, 적립 대상 구분</td></tr>
+          <tr><th>페이머니카드</th><td>충전 잔액으로 결제하는 선불카드</td><td>삼성월렛 머니(선불) 도입 지원</td></tr>
+          <tr><th>페이체크카드</th><td>결제계좌에서 바로 출금되는 체크카드</td><td>신용·체크 인증 정책 협의, 매입 경로 확대</td></tr>
+          <tr><th>페이신용카드</th><td>혜택이 가맹점번호·업종 코드로 적용</td><td>제휴카드 매출 분리, 업종 무이자 운영</td></tr>
           <tr><th>내 카드 머니 연결</th><td>체크카드 결제계좌를 페이머니에 연결</td><td>카드사별 요건 확인과 개별 협의</td></tr>
         </tbody>
       </table>
 
       <div class="st"><span>✓</span><h2>제가 잘할 수 있는 일</h2></div>
       <div class="ways">
-        <div><b>연결 카드사 확대</b><p>카드사마다 다른 정책과 일정을 파악하고 협의를 이끕니다</p><span>근거 · 넥슨 결제 오픈, 카드사별 인증·한도 협의</span></div>
+        <div><b>연결 카드사 확대</b><p>카드사마다 다른 정책과 일정을 파악하고 협의를 이끕니다</p><span>근거 · 카드사 공문 500건+, 넥슨 인증·한도 협의</span></div>
         <div><b>페이카드 운영</b><p>혜택이 승인·매입 시점에 정확히 적용되는 구조를 만듭니다</p><span>근거 · 제휴카드 매출 분리, 신차 업종 무이자 대응</span></div>
-        <div><b>제휴 과제 실행</b><p>유관부서·외부사 일정을 맞춰 오픈까지 끝까지 끌고 갑니다</p><span>근거 · 매입사 확대 PM, 장애 없이 운영 전환</span></div>
+        <div><b>제휴 과제 실행</b><p>유관부서·외부사 일정을 맞춰 오픈까지 끝까지 끌고 갑니다</p><span>근거 · 매입사 확대 PM, 계획한 일정대로 운영 전환</span></div>
       </div>
 
       <div class="box box--ink" style="margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">

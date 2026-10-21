@@ -485,3 +485,37 @@ b, strong { font-weight: 700; }
 .hero__grid { grid-template-columns: 1.5fr 1fr; }
 .hero__lead { font-size: 18px; }
 @media (max-width: 900px) { .hero__grid { grid-template-columns: 1fr; } }
+
+/* print refinements */
+@media print {
+  .pj { break-inside: auto; }
+  .blk, .card, .limit, .alt, .month, .q, .tbl tr { break-inside: avoid; }
+  .case { break-before: page; }
+  .case:first-of-type { break-before: auto; }
+  .six__card { background: var(--blue) !important; color: #fff !important; }
+  .six__count b { font-size: 0; }
+  .six__count b::before { content: "6"; font-size: 64px; color: var(--blue); }
+  .demo, .demo-sub { display: none !important; }
+  .q:not([open]) p { display: block; }
+  /* 이력서 한 장 */
+  .resume .h2 { font-size: 24px; }
+  .resume .lead { font-size: 13px; margin-top: 4px; }
+  .resume .phead__meta { margin-top: 8px; }
+  .resume .resume__sec { padding: 8px 0; break-inside: auto; }
+  .resume .resume__sec > h2 { margin-bottom: 8px; font-size: 12px; }
+  .resume .career { gap: 6px; }
+  .resume .career__item { padding: 10px 14px; grid-template-columns: 130px 1fr; gap: 12px; }
+  .resume .career__item h3 { font-size: 14px; }
+  .resume .career__item p, .resume .career__item time { font-size: 11px; }
+  .resume .ach { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .resume .ach div { padding: 10px 12px; }
+  .resume .ach b { font-size: 12px; }
+  .resume .ach span { font-size: 15px; }
+  .resume .ach p { font-size: 10.5px; }
+  .resume .rows { gap: 6px; }
+  .resume .row { padding: 10px 14px; grid-template-columns: 110px 1fr 150px; gap: 12px; }
+  .resume .row b { font-size: 13px; }
+  .resume .row p, .resume .row span { font-size: 11px; }
+  .resume .chip { font-size: 11px; padding: 4px 10px; }
+}
+@media print { .six, .pay, .chain, .alts, .months, .grid2, .grid3, .stats, .case__head, .sub { break-inside: avoid; } .sub { break-after: avoid; } }

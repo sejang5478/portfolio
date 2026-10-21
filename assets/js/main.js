@@ -41,7 +41,7 @@
     if (reduced) { el.textContent = fmt(end, dec); return; }
     const t0 = performance.now();
     const step = (t) => {
-      const p = Math.min(1, (t - t0) / 1300);
+      const p = matchMedia("print").matches ? 1 : Math.min(1, (t - t0) / 1300);
       el.textContent = fmt(end * (1 - Math.pow(1 - p, 3)), dec);
       if (p < 1) requestAnimationFrame(step);
     };
@@ -65,6 +65,11 @@
   );
   const watch = (el, fn) => { if (!el) return; if (fn) onEnter.set(el, fn); io.observe(el); };
   $$(".reveal").forEach((el) => watch(el));
+  // 인쇄할 때는 애니메이션 대신 최종 숫자를 보여 줌
+  addEventListener("beforeprint", () => $$("[data-count]").forEach((el) => {
+    const dec = (el.dataset.count.split(".")[1] || "").length;
+    el.textContent = fmt(Number(el.dataset.count), dec);
+  }));
 
   /* ---------- 홈: 결제 조건 단계 ---------- */
   const STEPS = [
